@@ -54,7 +54,7 @@ public class UserService {
      * loginId, nickname 중복 체크는 Controller에서 진행 => 에러 메세지 출력을 위해
      */
     public void join2(JoinRequest req) {
-        userRepository.save(req.toEntity(encoder.encode(req.getPassword())));
+//        userRepository.save(req.toEntity(encoder.encode(req.getPassword())));
     }
 
     /**
