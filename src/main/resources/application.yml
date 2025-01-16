@@ -9,9 +9,11 @@ spring:
       ddl-auto: update
     show-sql: true
 
-  server:
-    servlet:
-      session:
-        tracking-modes: cookie
-        # 쿠키 파기 시간 설정을 여기서 해줄수도 있음
-        timeout: 1800
+server:
+  servlet:
+    session:
+      tracking-modes: cookie
+      timeout: 30m # 시간 단위 추가
+
+jwt:
+  secret-key: ZmV3Z3BsbGZramxmZmthd2ZsZGtmc2RsZmthc2xmbGthc2xmYXNmZGw=
