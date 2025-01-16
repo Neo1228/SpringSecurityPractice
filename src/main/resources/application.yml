@@ -8,3 +8,10 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+  server:
+    servlet:
+      session:
+        tracking-modes: cookie
+        # 쿠키 파기 시간 설정을 여기서 해줄수도 있음
+        timeout: 1800
